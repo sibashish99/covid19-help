@@ -133,7 +133,7 @@ header .navbar ul a:hover{
     header .navbar{
         position:fixed;
         top: 8rem;
-        left:0;
+        left:-120%;
         height:100%;
         width:100%;
         background: #eee;
@@ -160,6 +160,12 @@ header .navbar ul a:hover{
         color: #fff;
         border: none;
         border-radius: 5rem;
+     }
+     .fa-times{
+         transform: rotate(180deg);
+     }
+     header .navbar.nav-toggle{
+         left: 0;
      }
 }
 
