@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+
+
+:root{
+    --red: #FF4F5B;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition:all 0.3s cubic-bezier(.16,.8,.62,1.52);
+    text-transform: capitalize;
+}
+
+*::selection{
+    background: var(--red);
+    color: #fff;
+}
+html{
+    font-size: 62.5%;overflow: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.3rem;
+}
+html::-webkit-scrollbar-track{
+    background:#000;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--red);
+}
+body{
+    background:#f9f9f9;
+}
+header{
+    width: 100%;
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding:2.5rem 7%;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
