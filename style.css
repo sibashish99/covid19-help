@@ -23,7 +23,8 @@
     color: #fff;
 }
 html{
-    font-size: 62.5%;overflow: hidden;
+    font-size: 62.5%;
+    overflow: hidden;
 }
 html::-webkit-scrollbar{
     width: 1.3rem;
@@ -49,5 +50,116 @@ header{
     z-index: 100;
     padding:2.5rem 7%;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color: #666;
+    font-family: 'Titillium Web', sans-serif;
+}
+header .logo span{
+    color: var(--red);
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header .navbar ul li{
+    margin-left: 2.5rem;
+}
+header .navbar ul a{
+    color:#999;
+    font-size: 2rem;
+}
+header .navbar ul a.active,
+header .navbar ul a:hover{
+    color: var(--red);
+    border-bottom: 0.2rem solid var(--red);
+    padding:0.7rem 0;
+}
+#menu{
+    font-size:3rem;
+    color: #999;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 768px){
+    #menu{
+        display:block;
+    }
+    header .navbar{
+        position:fixed;
+        top: 8rem;
+        left:0;
+        height:100%;
+        width:100%;
+        background: #eee;
+        border-top: .2rem solid rgb(0, 0, 0,0.1);
+
+    }
+    header .navbar ul{
+        flex-flow: column;
+        padding:2rem;
+    }
+    header .navbar ul li{
+       text-align:center;
+       width:100%;
+       margin:1rem 0;
+    }
+    header .navbar ul li a{
+        display:block;
+        padding:1rem;
+     }
+     header .navbar ul li a.active,
+     header .navbar ul li a:hover{
+        padding:1rem;
+        background:var(--red);
+        color: #fff;
+        border: none;
+        border-radius: 5rem;
+     }
 }
 
