@@ -73,6 +73,16 @@ section{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+.heading{
+    font-size: 3rem;
+    color: #666;
+    font-family: 'Titillium Web', sans-serif;
+}
+.heading span{
+    color: var(--red);
+    font-family: 'Titillium Web', sans-serif;
+}
+
 header{
     width: 100%;
     background:#fff;
@@ -152,6 +162,49 @@ header .navbar ul a:hover{
     font-size: 1.5rem;
     padding:1rem;
 }
+.protect .heading{
+   text-align: center;
+   padding: 1rem;
+}
+.protect .box-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.protect .box-container .box{
+    background:#fff;
+    border: .1rem solid rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin:2rem;
+    width: 34rem;
+    border-radius:0.5rem;
+    box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.protect .box-container .box img{
+    height:17rem;
+    width:17rem;
+}
+
+.protect .box-container .box h3{
+    font-size:2.3rem;
+    color:#666;
+    padding:1rem 0;
+    font-family: 'Titillium Web', sans-serif;
+    
+} 
+.protect .box-container .box p{
+    font-size:1.4rem;
+    color:#999;
+    padding:.5rem;
+} 
+
+.protect .box-container .box:hover{
+    transform: translateY(-1.5rem);
+}
+
 
 
 
