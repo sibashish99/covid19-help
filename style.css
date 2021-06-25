@@ -246,12 +246,51 @@ header .navbar ul a:hover{
     padding: 0.3rem 0;
 }
 
+.prevent{
+    background:#222;
+}
 
+.prevent .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
 
+.prevent .row .image{
+    flex:1 1 37rem;
+    height:35rem;
+    text-align: center;
+}
 
+.prevent .row .image img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
 
+.prevent .row .content{
+    padding:2rem 0;
+    flex:1 1 37rem;
+}
 
+.prevent .row .content .heading{
+    color:#fff;
+}
 
+.prevent .row .content p{
+    font-size: 1.7rem;
+    color:#aaa;
+    padding:1rem 0;
+}
+
+.prevent .row .content ul li{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color:#aaa;
+    padding:.5rem 0;
+}
 
 
 
@@ -330,6 +369,9 @@ header .navbar ul a:hover{
      }
      .home .content{
          text-align: center;
+     }
+     .prevent .row:last-child{
+         flex-flow: column-reverse;
      }
 }
 
