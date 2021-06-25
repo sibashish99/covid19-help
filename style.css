@@ -292,7 +292,44 @@ header .navbar ul a:hover{
     padding:.5rem 0;
 }
 
-
+.handwash .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.handwash .box-container .box{
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin:2rem;
+    margin-top: 3rem;
+    padding: 2rem 3.5rem;
+    text-align: center;
+    position: relative;
+}
+.handwash .box-container img{
+    height:17rem;
+    width:17rem;
+}
+.handwash .box-container h3{
+    font-size: 1.7rem;
+    color: #666;
+    padding:1rem 0;
+}
+.handwash .box-container .box span{
+    display:block;
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'Titillium Web', sans-serif;
+    top: -2rem;
+    left:-2rem;
+    height:5rem;
+    width:5rem;
+    color: #fff;
+    background: var(--red);
+    border-radius: 5rem;
+    line-height:5rem;
+}
 
 
 
